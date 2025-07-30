@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-plugin-intl",
+  "name": "thompsonsj-gatsby-plugin-intl",
   "description": "Gatsby plugin to add react-intl onto a site",
-  "version": "5.8.1",
+  "version": "5.8.3",
   "author": "Daewoong Moon <wiziple@gmail.com>",
   "bugs": {
     "url": "https://github.com/wiziple/gatsby-plugin-intl"
