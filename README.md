@@ -141,7 +141,15 @@ languages | string[] | supported language keys
 defaultLanguage | string | default language when visiting `/page` instead of `ko/page`
 redirect | boolean | if the value is `true`, `/` or `/page-2` will be redirected to the user's preferred language router. e.g) `/ko` or `/ko/page-2`. Otherwise, the pages will render `defaultLangugage` language.
 redirectComponent | string (optional) | additional component file path to be rendered on with a redirection component for SEO.
+disableRootPages | boolean (optional) | if the value is `true`, `/` or `/page-2` will not be created. Use if you are using your own redirect rules. Useful in scenarios where page creation should be avoided - e.g. sitemap generation. 
 
+## Page specific options
+
+Pass the following within a `gatsbyPluginIntl` object in [page context](https://www.gatsbyjs.com/docs/creating-and-modifying-pages/#pass-context-to-pages).
+
+Option | Type | Description
+-- | -- | --
+onlyLanguages | array | only generate the page in the specified languages.
 
 ## Components
 

@@ -49,6 +49,7 @@ exports.onCreatePage = async ({ page, actions }, pluginOptions) => {
     languages = ["en"],
     defaultLanguage = "en",
     redirect = false,
+    disableRootPages = false,
   } = pluginOptions
 
   const getMessages = (path, language) => {
@@ -96,7 +97,7 @@ exports.onCreatePage = async ({ page, actions }, pluginOptions) => {
 
   deletePage(page)
 
-  if (onlyLanguages.length === 0 || onlyLanguages.length === languages.length) {
+  if (!disableRootPages && (onlyLanguages.length === 0 || onlyLanguages.length === languages.length)) {
     const newPage = generatePage(false, defaultLanguage)
     createPage(newPage)
   }
