@@ -1,4 +1,4 @@
-declare module 'gatsby-plugin-intl' {
+declare module 'thompsonsj-gatsby-plugin-intl' {
   import * as gatsby from 'gatsby';
   import React from 'react';
 
